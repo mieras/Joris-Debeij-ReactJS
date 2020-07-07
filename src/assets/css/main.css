@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --color-black: #ff0000;
+  --color-black: #000000;
   --color-black-lucid: rgba(0, 0, 0, 0.3);
   --color-black-trans: rgba(0, 0, 0, 0);
   --color-white: #ffffff;
@@ -44,7 +44,6 @@ body {
   font-size: var(--base-size);
   color: var(--color-white);
   background: var(--color-black);
-  background: green;
 }
 
 /* =========== App ========== */
@@ -622,7 +621,7 @@ body {
 
 .project--item .overlay--content .overlay--subtitle {
   font-family: var(--type-paragraph), sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.75rem;
   line-height: 1.2;
 }
 
@@ -683,24 +682,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 64px;
-
+  height:100%;
+  padding:1rem 2rem 2rem 1rem;
   z-index: 5;
 }
 
 
 
 .view__project .content .series {
+  width:100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .view__project .series--controls {
   position: fixed;
   bottom: 2em;
-  right: 1em;
+  right: 2em;
   z-index: 6;
   width: 6rem;
   height: 2.5rem;
@@ -734,7 +735,7 @@ body {
 .info--toggle {
   position: fixed;
   bottom: 2em;
-  left: 1em;
+  left: 2em;
   z-index: 16;
   width: 6rem;
   height: 2.5rem;
@@ -969,11 +970,17 @@ body {
   /*project*/
   .view__project .content .video {
     width: 80%;
-    height: 70vh;
+     height: 70vh;
+/* 
+    width:400px;
+    overflow: hidden;
+    height: 0;
+    padding-top: 56.25%; */
+
   }
 
   .info.is-open {
-    padding: 1rem 8rem;
+    padding: 3rem 2rem;
     display: flex !important;
     flex-direction: row;
     justify-content: space-between;
@@ -994,7 +1001,8 @@ body {
   .info--body {
     font-family: var(--type-paragraph), sans-serif;
     max-width: 40vw;
-    font-size: 0.75em;
+    font-size: 0.65em;
+    line-height: 1.6;
   }
 
   /*info*/
@@ -1078,8 +1086,9 @@ body {
   /*project*/
   .view__project .content .video {
     width: 80%;
-    height: 70vh;
+    height: 80vh;
     object-fit: contain;
+    
   }
 
   /*info*/
